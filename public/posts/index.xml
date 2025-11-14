@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Akshay</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:1313/akshay.github.io/posts/</link>
     <description>Recent content in Posts on Akshay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 14 Nov 2025 10:48:39 +0100</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Nov 2025 10:48:39 +0100</lastBuildDate><atom:link href="http://localhost:1313/akshay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/akshay.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 14 Nov 2025 10:48:39 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/akshay.github.io/posts/my-first-post/</guid>
       <description>&lt;p&gt;this is a test&lt;/p&gt;</description>
       
     </item>

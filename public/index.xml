@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Akshay</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/akshay.github.io/</link>
     <description>Recent content in Home on Akshay</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2025 </copyright>
-    <lastBuildDate>Fri, 14 Nov 2025 10:48:39 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Nov 2025 10:48:39 +0100</lastBuildDate><atom:link href="http://localhost:1313/akshay.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>http://localhost:1313/akshay.github.io/posts/my-first-post/</link>
       <pubDate>Fri, 14 Nov 2025 10:48:39 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/akshay.github.io/posts/my-first-post/</guid>
       <description>&lt;p&gt;this is a test&lt;/p&gt;</description>
       
     </item>
     
     <item>
       <title>⚙️ My Creative Process</title>
-      <link>http://localhost:1313/process/</link>
+      <link>http://localhost:1313/akshay.github.io/process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/process/</guid>
+      <guid>http://localhost:1313/akshay.github.io/process/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;From Sketch to Final Art
     &lt;div id=&#34;from-sketch-to-final-art&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -72,10 +72,10 @@
     
     <item>
       <title>⭐ Customer Reviews</title>
-      <link>http://localhost:1313/reviews/</link>
+      <link>http://localhost:1313/akshay.github.io/reviews/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/reviews/</guid>
+      <guid>http://localhost:1313/akshay.github.io/reviews/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;Happy Clients 🎉
     &lt;div id=&#34;happy-clients-&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
@@ -102,10 +102,10 @@
     
     <item>
       <title>💌 Get In Touch</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:1313/akshay.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:1313/akshay.github.io/contact/</guid>
       <description>&lt;h2 class=&#34;relative group&#34;&gt;Let&amp;rsquo;s Work Together! 🚀
     &lt;div id=&#34;lets-work-together-&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;
     
