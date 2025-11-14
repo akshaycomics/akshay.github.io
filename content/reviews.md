@@ -8,12 +8,16 @@ draft: false
 
 > "Amazing artist! Brought my characters to life perfectly!" 
 > 
-> — Client Name
+> — Sunkeerth
 
 > "Professional, creative, and super fast delivery!" 
 > 
-> — Another Client
+> — Sunkeerth again
 
 > "The best comic artist I've worked with!" 
 > 
-> — Happy Customer
+> — Sunkeerth
+
+> "Keeps stealing my stuff"
+>
+> — Varsha

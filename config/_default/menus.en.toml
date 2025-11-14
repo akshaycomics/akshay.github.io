@@ -69,32 +69,18 @@
 #   weight = 20
 
 
-[[main]]
-  name = "🏠 Home"
-  pageRef = "/"
-  weight = 10
 
 [[main]]
-  name = "🎨 Past Work"
+  name = "Work"
   pageRef = "portfolio"
   weight = 20
 
 [[main]]
-  name = "⚙️ My Process"
-  pageRef = "process"
-  weight = 30
-
-[[main]]
-  name = "⭐ Reviews"
+  name = "Reviews"
   pageRef = "reviews"
   weight = 40
 
 [[main]]
-  name = "💌 Contact"
+  name = "Contact"
   pageRef = "contact"
   weight = 50
-
-[[main]]
-  name = "📝 Blog"
-  pageRef = "posts"
-  weight = 60

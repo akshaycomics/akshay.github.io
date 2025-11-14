@@ -1,5 +1,5 @@
 ---
-title: "💌 Get In Touch"
+title: "Get In Touch"
 description: "Let's create something amazing together!"
 draft: false
 ---
@@ -8,9 +8,6 @@ draft: false
 
 Ready to bring your comic ideas to life?
 
-**Email:** artist@example.com  
-**Social Media:** @comicartist
+**Email:** seriousemailid@gmail.com
 
-Or fill out the form below:
-
-[Contact form here - you can add a form service later]
+**Social Media:** @akshay
