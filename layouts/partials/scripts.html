@@ -1,0 +1,88 @@
+{{/* Load Alpine.js (Blowfish uses it for UI behavior) */}}
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+{{/* Initialize Alpine global state for theme management */}}
+<script>
+document.addEventListener("alpine:init", () => {
+  Alpine.data("Site", () => ({
+    isDark: document.documentElement.classList.contains("dark"),
+
+    toggleTheme() {
+      this.isDark = !this.isDark;
+      const html = document.documentElement;
+
+      if (this.isDark) {
+        html.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+      }
+    }
+  }));
+});
+</script>
+
+{{/* Restore saved theme if available */}}
+<script>
+(function() {
+  const saved = localStorage.getItem("theme");
+  if (saved === "dark") {
+    document.documentElement.classList.add("dark");
+  } else if (saved === "light") {
+    document.documentElement.classList.remove("dark");
+  }
+})();
+</script>
+
+{{/* Load Blowfish search engine (Lunr or Fuse) if search enabled */}}
+{{ if site.Params.search | default false }}
+  {{ $search := resources.Get "js/search.js" | minify | fingerprint }}
+  <script src="{{ $search.Permalink }}"></script>
+
+  {{ $searchdata := resources.Get "search/index.json" | fingerprint }}
+  <script>
+    window.__searchIndex = "{{ $searchdata.RelPermalink }}";
+  </script>
+{{ end }}
+
+{{/* Load equation/MathJax support if math enabled */}}
+{{ if or .Params.math site.Params.math }}
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{{ end }}
+
+{{/* Cookie / privacy consent banner IF enabled */}}
+{{ if site.Params.privacy.showConsentBanner }}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const consent = localStorage.getItem("privacyConsent");
+  if (!consent) {
+    const banner = document.getElementById("privacy-consent");
+    if (banner) banner.classList.remove("hidden");
+
+    const accept = document.getElementById("accept-privacy");
+    if (accept) {
+      accept.addEventListener("click", () => {
+        localStorage.setItem("privacyConsent", "yes");
+        banner.classList.add("hidden");
+      });
+    }
+  }
+});
+</script>
+{{ end }}
+
+{{/* Menu logic for mobile collapse/expand (minimal version) */}}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggles = document.querySelectorAll("[data-menu-toggle]");
+  toggles.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = document.getElementById(btn.dataset.menuToggle);
+      if (target) {
+        target.classList.toggle("hidden");
+      }
+    });
+  });
+});
+</script>

@@ -1,0 +1,103 @@
+/* Stickman Dark Mode Toggle (Hugo Blowfish Override) */
+
+/* container */
+.theme-toggle {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 120px;
+    height: 260px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  /* lamp */
+  .lamp {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 70px;
+    height: 70px;
+    background: #f9d86d;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 12px rgba(255, 238, 150, 0.8);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* rope */
+  .rope {
+    position: absolute;
+    top: 70px;
+    left: 58px;
+    width: 4px;
+    height: 80px;
+    background: #b0b0b0;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle:active .rope {
+    transform: translateY(10px);
+  }
+  
+  /* stickman container */
+  .stickman {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 70px;
+    height: 130px;
+  }
+  
+  /* head */
+  .stickman::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: 26px;
+    height: 26px;
+    background: currentColor;
+    border-radius: 50%;
+  }
+  
+  /* body + limbs */
+  .stickman::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 34px;
+    width: 2px;
+    height: 90px;
+    background: currentColor;
+    box-shadow:
+      -18px 20px 0 0 currentColor,
+      18px 20px 0 0 currentColor,
+      -12px 60px 0 0 currentColor,
+      12px 60px 0 0 currentColor;
+    transition: transform 0.3s ease;
+  }
+  
+  .theme-toggle:active .stickman::after {
+    transform: translateY(-10px);
+  }
+  
+  /* dark mode variants — Blowfish uses `dark` on html NOT body */
+  html.dark .lamp {
+    background: #2f2f2f;
+    box-shadow: none;
+  }
+  
+  html.dark .rope {
+    background: #666;
+  }
+  
+  html.dark .stickman::before,
+  html.dark .stickman::after {
+    background: #f0f0f0;
+    box-shadow:
+      -18px 20px 0 0 #f0f0f0,
+      18px 20px 0 0 #f0f0f0,
+      -12px 60px 0 0 #f0f0f0,
+      12px 60px 0 0 #f0f0f0;
+  }
+  
